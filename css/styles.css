@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --outfit: 'Outfit', sans-serif;
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Standard Styles */
+body {
+    font-family: var(--outfit);
+    font-size: 18px;
+    color: var(--soft-blue);
+    background-color: var(--very-dark-blue-main);
+}
+
+/* Main */
+.main {
+    padding: 63px 25px;
+}
+
+.main-card {
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--very-dark-blue-card);
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--white);
+    margin: 20px 0;
+}
+
+.info-paragraph {
+    margin-top: -5px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.info-numbers {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px;
+}
+
+.numbers-container {
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ethereum-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cyan);
+}
+
+.clock-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-creation {
+    padding-top: 15px;
+    border-top: 1px solid var(--very-dark-blue-line);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.creation-avatar {
+    width: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.creation-text {
+    font-size: 16px;
+}
+
+.creation-name {
+    font-size: 16px;
+    color: var(--white);
+}

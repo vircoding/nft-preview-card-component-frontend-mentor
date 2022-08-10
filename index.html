@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NFT preview card component</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <!-- Main -->
+        <main class="main">
+            <div class="main-card">
+                <img src="images/image-equilibrium.jpg" alt="Equilibrium" class="card-img" />
+                <div class="card-info">
+                    <h1 class="info-title">Equilibrium #3429</h1>
+                    <p class="info-paragraph">
+                        Our Equilibrium collection promotes balance and calm.
+                    </p>
+                    <div class="info-numbers">
+                        <div class="numbers-ethereum numbers-container">
+                            <img
+                                src="images/icon-ethereum.svg"
+                                alt="Ethereum Icon"
+                                class="ethereum-icon numbers-icon"
+                            />
+                            <h2 class="ethereum-text">0.041 ETH</h2>
+                        </div>
+                        <div class="numbers-clock numbers-container">
+                            <img
+                                src="images/icon-clock.svg"
+                                alt="Clock Icon"
+                                class="clock-icon numbers-icon"
+                            />
+                            <h2 class="clock-text">3 days left</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-creation">
+                    <img src="images/image-avatar.png" alt="Avatar" class="creation-avatar" />
+                    <p class="creation-text">
+                        Creation of <span class="creation-name">Jules Wyvern</span>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
+
