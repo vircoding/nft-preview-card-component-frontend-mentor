@@ -2,9 +2,9 @@
 
 :root {
     --outfit: 'Outfit', sans-serif;
-    --soft-blue: hsl(215, 51%, 70%);
+    --soft-blue: hsl(215, 52%, 70%);
     --cyan: hsl(178, 100%, 50%);
-    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-main: hsl(216, 54%, 11%);
     --very-dark-blue-card: hsl(216, 50%, 16%);
     --very-dark-blue-line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
@@ -27,13 +27,25 @@ body {
 
 /* Main */
 .main {
-    padding: 63px 25px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-card {
+    width: 325px;
     padding: 25px;
     border-radius: 15px;
     background-color: var(--very-dark-blue-card);
+    box-shadow: 0 40px 35px rgba(0, 0, 21, 0.4);
+}
+
+.card-hover {
+    width: 275px;
+    height: 275px;
+    border-radius: 10px;
+    position: absolute;
 }
 
 .card-img {
@@ -42,6 +54,7 @@ body {
 }
 
 .info-title {
+    display: inline-block;
     font-size: 22px;
     font-weight: 600;
     color: var(--white);
@@ -101,4 +114,23 @@ body {
 .creation-name {
     font-size: 16px;
     color: var(--white);
+}
+
+/* Active States */
+.card-hover:hover {
+    background-color: hsla(178, 100%, 50%, 0.5);
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.info-title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.creation-name:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
